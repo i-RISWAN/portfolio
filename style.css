@@ -1,0 +1,59 @@
+:root{--bg:#F6F8FD;--paper:#fff;--ink:#0F1538;--mute:#4D5578;--line:#D8DEF0;--blue:#2B3BFF;--pen:#C42B2E}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{margin:0;color:var(--ink);background:var(--bg);font:1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:var(--blue);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 0}
+.logo{font:800 1.25rem "Bricolage Grotesque",sans-serif;color:var(--ink);text-decoration:none}
+nav a{margin-left:1.4rem;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--blue)}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center;padding:4rem 0 5rem}
+.hero .ph{aspect-ratio:4/5}
+h1{font-size:clamp(1.7rem,3.8vw,2.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.2}
+.lede{font-size:1.15rem;color:var(--mute);margin:1.3rem 0 0;max-width:40rem}
+.btns{margin-top:1.8rem}
+.btns a{display:inline-block;padding:.75rem 1.3rem;margin:0 .7rem .7rem 0;font-weight:600;text-decoration:none;border:2px solid var(--ink);border-radius:999px}
+.btns a:first-child{background:var(--ink);color:#fff}
+.btns a:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+
+section{padding:3.5rem 0}
+.sh{display:grid;grid-template-columns:200px 1fr;gap:2rem}
+h2{font-size:1.9rem;font-weight:800;letter-spacing:-.02em;position:sticky;top:1rem;align-self:start}
+article{background:var(--paper);border:2px solid var(--ink);border-radius:6px;padding:2rem;margin-bottom:2rem}
+article:nth-of-type(2){border-color:var(--blue)}
+article h3{font-size:1.5rem;letter-spacing:-.02em}
+.role{color:var(--mute);margin:.4rem 0 1.2rem;font-size:.98rem}
+h4{font:800 1rem "Bricolage Grotesque",sans-serif;margin:1.6rem 0 .5rem}
+ul{padding-left:1.2rem;margin:0}
+li{margin-bottom:.5rem}
+li::marker{color:var(--blue)}
+.flow{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0}
+.flow b{font-weight:600;font-size:.88rem;padding:.4rem .75rem;background:var(--bg);border:1.5px solid var(--ink);border-radius:4px}
+.flow i{align-self:center;color:var(--blue);font-style:normal;font-weight:600}
+.later{border:2px dashed var(--blue);padding:.9rem 1.1rem;border-radius:6px;background:#F0F2FF}
+.ph{position:relative;aspect-ratio:4/3;background:#EEF1FC;border:2px dashed var(--blue);border-radius:6px;display:grid;place-items:center;font:.8rem "Instrument Sans",sans-serif;color:var(--mute);text-align:center;padding:.5rem}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1.2rem 0}
+.shots .ph{aspect-ratio:3/4}
+.video{aspect-ratio:16/9;border:2px solid var(--ink);border-radius:6px;overflow:hidden;background:#000;margin:.8rem 0 .4rem}
+.video iframe{width:100%;height:100%;border:0;display:block}
+figure{margin:1.2rem 0 0}
+.shots{margin:0 0 1.2rem}
+figure.first{margin:0 0 1.6rem}
+figcaption{font-size:.88rem;color:var(--mute);margin-top:.5rem}
+.award{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.award p:first-child{font:800 1.5rem/1.2 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em;margin-top:0}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.facts div{border-top:3px solid var(--ink);padding-top:.7rem}
+.facts div:last-child{border-color:var(--blue)}
+.facts strong{font-family:"Bricolage Grotesque",sans-serif;font-size:1.1rem}
+.facts p{margin:.3rem 0 0;color:var(--mute)}
+#contact article{background:var(--ink);color:#fff;border-color:var(--ink)}
+#contact a{color:#fff;font-weight:600;font-size:1.15rem;margin-right:1.6rem}
+#contact p{margin:.4rem 0 1.2rem;font-size:1.15rem}
+footer{padding:1.5rem 0 3rem;color:var(--mute);font-size:.9rem}
+@media (max-width:760px){.hero,.sh,.award,.facts{grid-template-columns:1fr}.hero{gap:2rem}.hero .ph{order:-1;max-width:20rem}h2{position:static;margin-bottom:1.2rem}nav a{margin-left:1rem}article{padding:1.3rem}.shots{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
